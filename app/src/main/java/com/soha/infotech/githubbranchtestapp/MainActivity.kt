@@ -30,6 +30,8 @@ class MainActivity : ComponentActivity() {
             }
             Log.d("TAG", "onCreate: Initial Commit")
             Log.d("TAG", "onCreate: Second Commit")
+
+            Log.d("TAG", "onCreate: Third Commit with an error and app is crashed")
         }
     }
 }
@@ -40,7 +42,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-    Log.d("TAG", "Greeting: Fourth Commit")
 }
 
 @Preview(showBackground = true)
