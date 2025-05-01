@@ -28,7 +28,8 @@ class MainActivity : ComponentActivity() {
                     )
                 }
             }
-            Log.d("TAG", "onCreate: First Commit")
+            Log.d("TAG", "onCreate: Initial Commit")
+            Log.d("TAG", "onCreate: Second Commit")
         }
     }
 }
