@@ -22,5 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
            println("Add new code for second commit")
         }
+
+        println("Add new code for login screen")
     }
 }
