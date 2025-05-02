@@ -20,34 +20,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            GitHubBranchTestAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-            Log.d("TAG", "onCreate: Initial Commit")
-            Log.d("TAG", "onCreate: Second Commit")
-
-            Log.d("TAG", "onCreate: Third Commit with an error and app is crashed")
+            print("Main branch code")
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    GitHubBranchTestAppTheme {
-        Greeting("Android")
     }
 }
